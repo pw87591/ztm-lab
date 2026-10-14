@@ -4,7 +4,7 @@ const { precaching, routing, strategies } = workbox;
 // Zmiana numeru "revision" wymusza ponowne pobranie danego pliku.
 precaching.precacheAndRoute([
  { url: './', revision: '1' },
- { url: 'index.html', revision: '1' },
+ { url: 'index.html', revision: '2' },
  { url: 'index.js', revision: '1' },
  { url: 'manifest.json', revision: '2' },
  { url: 'offline.html', revision: '1' },
