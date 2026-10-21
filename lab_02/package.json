@@ -1,7 +1,7 @@
 {
   "name": "lab_02",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://lab02-7c769.web.app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,7 @@
   "type": "commonjs",
   "dependencies": {
     "web-push": "^3.6.7"
-  }
+  },
+  "author": "",
+  "license": "ISC"
 }

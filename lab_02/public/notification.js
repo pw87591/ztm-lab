@@ -51,7 +51,7 @@ async function showSwNotification() {
 document.querySelector('#sw').addEventListener('click', showSwNotification);
 
 
-const VAPID_PUBLIC_KEY = 'BBJX3Kdn7VbC1Z1joMm7AYwWDfTdOZo7b69_SvpZfRueywBAGoexqR2TKxZ8_t32lyP6dzYm-OimPo7cVe7zC0Q';
+const VAPID_PUBLIC_KEY = 'BFJVaSxNM2oYqNwgXiD8BUVgUprSOT_f3yIdBchPRblxxLZeMifkUzcvVsZDKDyA07177H_2a8HncV4NcUAM9s8';
 const subscriptionField = document.querySelector('#subscription');
 // Klucz VAPID jest zapisany w base64url, a pushManager.subscribe() oczekuje tablicy bajtów.
 function urlBase64ToUint8Array(base64String) {
@@ -103,7 +103,8 @@ document.querySelector('#copy').addEventListener('click', async () => {
  }
 })
 
-async function wyslijPowiadomienie() {
+async function wyslijPowiadomienie(event) {
+    event.preventDefault();
     const tytul = document.querySelector('#tytul').value;
     const tresc = document.querySelector('#tresc').value;
     const ikona = document.querySelector('#ikona').value;
