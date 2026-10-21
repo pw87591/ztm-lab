@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <title>Powiadomienia</title>
+    <link rel="manifest" href="manifest.json" />
+    <script src="notification.js" defer></script>
+    <link rel="icon" type="image/png" sizes="196x196" href="icons/favicon-196.png">
+ </head>
+ <body>
+    <h1>Notification API</h1>
+    <p>Uprawnienie do powiadomień: <strong id="permission">?</strong></p>
+    <button id="enable">Włącz powiadomienia</button>
+    <button id="local">Powiadomienie ze strony</button>
+    <button id="sw">Powiadomienie z service workera</button>
+
+    <h2>Web Push</h2>
+    <button id="subscribe">Subskrybuj powiadomienia push</button>
+    <button id="unsubscribe">Anuluj subskrypcję</button>
+    <p>
+        <label for="subscription">Subskrypcja (skopiuj do pliku lab_02/subscription.json):
+        </label><br />
+        <textarea id="subscription" rows="10" cols="60" readonly></textarea>
+    </p>
+    <button id="copy">Kopiuj subskrypcję</button><br>
+    <form id="form_powiadomienie">
+        <label for="tytul">Tytul:</label>
+        <input type="text" name="input_name" id="tytul"><br>
+        <label for="tytul">Ikona:</label>
+        <select name="input_name" id="ikona">
+            <option value="kot1.png">Kot 1</option>
+            <option value="kot2.png">Kot 2</option>
+            <option value="kot3.png">Kot 3</option>
+        </select> <br>
+        <label for="tresc">Tresc:</label>
+        <textarea id="tresc" rows="10" cols="60"></textarea><br>
+        <input type="submit" value="Wyslij">
+    </form>
+ </body>
+</html>
